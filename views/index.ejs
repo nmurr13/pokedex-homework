@@ -6,6 +6,12 @@
     <title>Pokedex</title>
 </head>
 <body>
-    
+    <h1>Pokedex</h1>
+    <ul>
+    <% pokes.forEach((poke) => { %>
+        <img src="<%- poke.img %>">
+
+    <% }) %>
+    </ul>
 </body>
 </html>
