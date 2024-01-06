@@ -50958,5 +50958,13 @@ data:  [
       entreeforestlevel: "30"
     }
   }
-]
+],
+getAll: function (){
+  return this.data
+},
+getOne: function(index){
+  return this.data[index]
 }
+}
+
+module.exports=Pokemon
