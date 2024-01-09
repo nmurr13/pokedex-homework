@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-</head>
-<body>
+<%- include("./partials/head.ejs") %>
+    <a href="/pokemon/new">CREATE NEW POKEMON</a>
     <h1>Pokedex</h1>
     <ul>
-    <% pokes.forEach((poke) => { %>
-        <img src="<%- poke.img %>">
+    <% pokes.forEach((poke, index) => { %>
+        <a href="/pokemon/<%= index %>"><img src="<%- poke.img %>"></a>
 
     <% }) %>
     </ul>
-</body>
-</html>

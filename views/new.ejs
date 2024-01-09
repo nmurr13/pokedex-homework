@@ -1,0 +1,12 @@
+<%- include("./partials/head.ejs") %>
+
+<h1>Form to Create a Pokemon</h1>
+
+<form action="/pokemon" method="post">
+    <input type="text" name="name" placeholder="Enter name here">
+    <input type="text" name="type" placeholder="Enter type here">
+    <input type="text" name="hp" placeholder="Enter hp here">
+    <input type="text" name="attack" placeholder="Enter attack here">
+    <input type="text" name="defense" placeholder="Enter defense here">
+    <input type="submit" value="Create Pokemon">
+</form>

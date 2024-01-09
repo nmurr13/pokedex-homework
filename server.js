@@ -7,7 +7,7 @@ const express = require("express"); // import express
 const morgan = require("morgan"); //import morgan
 const methodOverride = require("method-override");
 const PokemonRouter= require("./controllers/pokemon.js");
-const Pokemon= require("./models/pokemon.js")
+
 
 /////////////////////////////////////////////////
 // Create our Express Application Object

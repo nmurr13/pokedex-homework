@@ -1,0 +1,11 @@
+<%- include("./partials/head.ejs") %>
+<h1>Form to Update <%= poke.name %></h1>
+
+<form action="/pokemon/<%= index %>?_method=PUT" method="post">
+    <input type="text" name="name" placeholder="Enter name here" value="<%= poke.name %>">>
+    <input type="text" name="type" placeholder="Enter type here" value="<%= poke.type %>">>
+    <input type="text" name="hp" placeholder="Enter hp here" value="<%= poke.stats.hp  %>">>
+    <input type="text" name="attack" placeholder="Enter attack here" value="<%= poke.attack %>">
+    <input type="text" name="defense" placeholder="Enter defense here" value="<%= poke.defense %>">
+    <input type="submit" value="Update Pokemon">
+</form>

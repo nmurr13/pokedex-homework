@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-</head>
-<body>
-    
-</body>
-</html>
+<%- include("./partials/head.ejs") %>
+<img src="<%=poke.img %>">
+<h1>Name: <%=poke.name %></h1>
+<ul>
+<li>Type: <%= poke.type %></li>
+<li>HP: <%= poke.stats.hp %></li>
+<li>ATTACK: <%= poke.stats.attack %></li>
+<li> DEFENSE: <%= poke.stats.defense %></li>
+</ul>
+<a href="/pokemon/<%= index %>/edit"><button>Edit</button></a>
+<form action="/pokemon/<%= index %>?_method=DELETE" method="post">
+    <input type="submit" value="Delete">
+</form>
+
+<a href="/pokemon">BACK TO LIST OF POKEMON</a>
